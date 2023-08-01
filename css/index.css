@@ -46,10 +46,45 @@ body {
   }
 }
 
+.menu-btn {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  border-radius: 10px;
+  color: white;
+  background-color: rgba(211, 211, 211, 0.05);
+  border: 1px solid transparent;
+}
+
+.items {
+  position: absolute;
+  z-index: 10;
+  top: 60px;
+  right: 0;
+  background-color: #203139;
+  border-radius: 2px;
+  padding: 10px;
+}
+
+.items button {
+  background-color: transparent;
+  padding: 8px;
+  color: white;
+}
+
 .turn {
-  background-color: green;
+  /* background-color: green; */
+  color: var(--yellow);
+
   grid-column-start: 1;
   grid-column-end: 3;
+  align-self: center;
+
+  display: flex;
+  align-items: center;
+  gap: 20px;
 }
 
 .square {
@@ -60,8 +95,9 @@ body {
   background-color: blue;
 }
 
-.actions {
-  background-color: purple;
+/* Menu styles  */
+.menu {
+  /* background-color: black; */
 }
 
 footer {
